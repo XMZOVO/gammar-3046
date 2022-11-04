@@ -3,7 +3,11 @@ import axios from 'axios'
 
 let imgSrc = $ref('')
 const searchContent = ref('')
-const IP = 'http://36.139.161.136:8081'
+const IP = '/api'
+const service = axios.create({
+  baseURL: '',
+  timeout: 5000,
+})
 // const IP = 'http://localhost:8080'
 const bookList = $ref([
   { name: '蓝宝书', show: true },
@@ -32,7 +36,7 @@ onMounted(() => {
 watch(searchContent, async (val) => {
   if (val === '')
     return
-  const res = await axios.get(`${IP}/grammar/${val}`)
+  const res = await service.get(`${IP}/grammar/${val}`)
   blueGrammar = res.data.blue
   preGrammar = res.data.pre
   masterGrammar = res.data.master
