@@ -79,7 +79,7 @@ const nextImg = () => {
     <div h-full grid="~ rows-[min-content_min-content_1fr]" of-hidden>
       <div flex items-center justify-between>
         <div font-bold py-4>
-          文法查阅-3406
+          文法查阅-3046
           <span> v1.0</span>
         </div>
         <div flex gap-2 items-center>
