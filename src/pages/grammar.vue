@@ -148,7 +148,7 @@ const nextImg = () => {
             </div>
             <div>{{ item.title }}</div>
             <div flex-1 />
-            <div i-carbon-book text-indigo />
+            <div i-carbon-book text-green />
           </div>
         </div>
 
@@ -167,7 +167,7 @@ const nextImg = () => {
             </div>
             <div>{{ item.title }}</div>
             <div flex-1 />
-            <div i-carbon-book text-green />
+            <div i-carbon-book text-indigo />
           </div>
         </div>
       </div>
